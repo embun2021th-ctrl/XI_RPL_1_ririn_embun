@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Mie Tek-Tek</title>
+    <link rel="stylesheet" href="tampilan.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    border: 4px solid #ffca28; 
+    object-fit: cover;
+}
+
+
+.judul-resep {
+    transition: color 0.3s ease;
+    cursor: pointer;
+    color: #333;
+}
+
+.judul-resep:hover {
+    color: #e65100; 
+}
+
+
+.bg-section-1 {
+    background-color: #1988d6; 
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+.bg-section-2 {
+    background-color: #bc9516;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.content-block h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #424242;
+}
+
+.content-block ul, 
+.content-block ol {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+
+.footer {
+    text-align: left;
+}
+
+.btn-pesan {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-pesan:hover {
+    background-color: #555;
+}
+.img-container {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.img-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+    </style>
+</head>
+<body>
+
+     <nav class="navbar">
+        <div class="logo">Web RPL</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Halaman Utama</a></li>
+            <li><a href="resep.html">Resep Makanan</a></li>
+            <li><a href="#">Surat Ijin</a></li>
+            <li><a href="Kontak_Anggota.html">Kontak Anggota</a></li>
+        </ul>
+    </nav>
+    <center>
+        <div class="img-container">
+            <!-- Gambar Mie Tek-Tek dengan tampilan rounded dan border warna terang -->
+            <img src="data:image/jpeg;base64,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" alt="Mie Tak Tak">
+        </div>
+        <h1 class="judul-resep">Resep Mie Tek-Tek</h1>
+    </center>
+
+    <!-- Section 1: Alat & Bahan (Warna Background 1) -->
+    <section class="bg-section-1">
+        <div class="content-block">
+            <h3>Alat:</h3>
+            <ul>
+                <li>Wajan</li>
+                <li>Spatula</li>
+                <li>Piring saji</li>
+                <li>Kompor</li>
+            </ul>
+
+            <h3>Bahan:</h3>
+            <ul>
+                <li>1 butir telur</li>
+                <li>Minyak goreng atau mentega secukupnya</li>
+                <li>Garam dan lada secukupnya</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section 2: Cara Membuat (Warna Background 2) -->
+    <section class="bg-section-2">
+        <div class="content-block">
+            <h3>Cara Membuat:</h3>
+            <ol>
+                <li>Panaskan wajan di atas kompor dengan api sedang. Tambahkan sedikit minyak goreng atau mentega.</li>
+                <li>Masukkan telur ke dalam wajan dan orak-arik hingga matang.  Angkat telur dan sisihkan.</li>
+                <li>Tambahkan sedikit minyak lagi jika diperlukan, lalu masukkan mie instan ke dalam wajan. Tumis mie hingga matang dan sedikit kecokelatan.</li>
+                <li>Masukkan telur yang sudah dimasak sebelumnya ke dalam wajan dengan mie. Aduk rata.</li>
+                <li>Tambahkan garam dan lada secukupnya sesuai selera. Aduk hingga semua bahan tercampur rata dan mie terasa lezat.</li>
+                <li>Angkat mie tek-tek dari wajan dan sajikan di piring saji. Mie tek-tek siap dinikmati!</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Tombol Pesan -->
+    <footer class="footer">
+        <button id="btnPesan" class="btn-pesan">Pesan</button>
+    </footer>
+
+    <script>
+document.getElementById('btnPesan').addEventListener('click', function() {
+    alert("Akan segera Hadir");
+});
+    </script>
+</body>
+</html>
