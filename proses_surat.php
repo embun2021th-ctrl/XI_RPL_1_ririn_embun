@@ -129,7 +129,7 @@ $html = '
 
 // 3. konfigurasi  dan inisialisasi Dompdf
 $options = new Options();
-$options->set('isRemoteEnabled', true); // Meungkinkan load gambar jika ada
+$options->set('isRemoteEnabled', true); // Memungkinkan load gambar jika ada
 $dompdf = new Dompdf($options);
 
 // 4. Render HTML ke PDF
